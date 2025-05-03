@@ -1,0 +1,17 @@
+@keyframes normalRotation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes acceleratedRotation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(36000deg); }
+}
+
+.rotating-element {
+    animation: normalRotation 2s linear infinite;
+}
+
+.rotating-element.accelerated {
+    animation: acceleratedRotation 2s linear infinite;
+}
