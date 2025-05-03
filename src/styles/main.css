@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #87CEEB;
+}
+
+#animation-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#animationCanvas {
+    display: block;
+}
+
+#madeInHeavenBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff0000, #ffffff);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#madeInHeavenBtn.active {
+    background: linear-gradient(45deg, #ff0000, #ff8800);
+    box-shadow: 0 0 20px #ff0000;
+}
+
+.mih-effect {
+    animation: mihBackground 2s linear infinite;
+}
+
+@keyframes mihBackground {
+    0% { filter: brightness(1); }
+    50% { filter: brightness(1.2); }
+    100% { filter: brightness(1); }
+}
